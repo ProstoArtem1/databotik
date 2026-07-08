@@ -96,7 +96,7 @@ async def worker_salary(message: Message, state: FSMContext):
 
         conn.commit()
 
-    await message.answer("✅ Резюме успешно сохранено.")
+    await message.answer(" Резюме успешно сохранено.")
     await state.clear()
 
 
@@ -184,6 +184,6 @@ async def employer_salary(message: Message, state: FSMContext):
 
         conn.commit()
 
-    await message.answer("✅ Вакансия успешно опубликована.")
+    await message.answer(" Вакансия успешно опубликована.")
     await state.clear()
 
