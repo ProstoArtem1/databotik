@@ -180,7 +180,7 @@ async def accept_contact(callback: CallbackQuery, bot: Bot):
     await bot.send_message(
         employer_telegram_id,
         f"""
-✅ Контакт подтвержден!
+ Контакт подтвержден!
 
 Работник:
 {worker_link}
@@ -190,7 +190,7 @@ async def accept_contact(callback: CallbackQuery, bot: Bot):
     await bot.send_message(
         callback.from_user.id,
         f"""
-✅ Контакт подтвержден!
+ Контакт подтвержден!
 
 Работодатель:
 {employer_link}
@@ -198,7 +198,7 @@ async def accept_contact(callback: CallbackQuery, bot: Bot):
     )
 
     await callback.message.edit_text(
-        "✅ Контакт успешно подтвержден."
+        " Контакт успешно подтвержден."
     )
 
     await callback.answer()
